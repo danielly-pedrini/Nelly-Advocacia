@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nelly Advocacia</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>⚖️Nelly Advocacia</h1>
+        <ul class="nav-links">
+          <li><a href="#home-page">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="home-page">
+        <section class="hero">
+          <h2>Excelência em Advocacia</h2>
+          <p>
+            Defendemos seus direitos com expertise, dedicação e compromisso.
+            Nossa equipe especializada está pronta para oferecer as melhores
+            soluções jurídicas.
+          </p>
+        </section>
+
+        <section class="especialidades" id="especialidades">
+          <h2>Nossas Especialidades</h2>
+          <div class="especialidades-grid">
+            <div
+              class="especialidade-card"
+              onclick="abrirFormulario('direito-civil')"
+            >
+              <div class="advogado-foto">DC</div>
+              <h3>Direito Civil</h3>
+              <div class="advogado-info">
+                <div class="advogado-nome">Dra. Marina Silva Santos</div>
+                <div class="oab-numero">OAB/SP 123.456</div>
+                <div class="descricao">
+                  Especialista em contratos, responsabilidade civil e direitos
+                  reais. Mais de 15 anos de experiência em litígios complexos e
+                  consultoria jurídica.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="especialidade-card"
+              onclick="abrirFormulario('direito-trabalhista')"
+            >
+              <div class="advogado-foto">DT</div>
+              <h3>Direito Trabalhista</h3>
+              <div class="advogado-info">
+                <div class="advogado-nome">Dr. Carlos Eduardo Lima</div>
+                <div class="oab-numero">OAB/SP 234.567</div>
+                <div class="descricao">
+                  Defesa em ações trabalhistas, consultoria em relações de
+                  trabalho e compliance trabalhista. Especialização em direito
+                  sindical.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="especialidade-card"
+              onclick="abrirFormulario('direito-penal')"
+            >
+              <div class="advogado-foto">DP</div>
+              <h3>Direito Penal</h3>
+              <div class="advogado-info">
+                <div class="advogado-nome">Dr. Roberto Almeida Cruz</div>
+                <div class="oab-numero">OAB/SP 345.678</div>
+                <div class="descricao">
+                  Defesa criminal, júri popular e recursos em tribunais
+                  superiores. Ampla experiência em crimes econômicos e
+                  empresariais.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="especialidade-card"
+              onclick="abrirFormulario('direito-familia')"
+            >
+              <div class="advogado-foto">DF</div>
+              <h3>Direito de Família</h3>
+              <div class="advogado-info">
+                <div class="advogado-nome">Dra. Ana Paula Rodrigues</div>
+                <div class="oab-numero">OAB/SP 456.789</div>
+                <div class="descricao">
+                  Divórcio, guarda de menores, pensão alimentícia e união
+                  estável. Atendimento humanizado em momentos delicados da vida
+                  familiar.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="especialidade-card"
+              onclick="abrirFormulario('direito-empresarial')"
+            >
+              <div class="advogado-foto">DE</div>
+              <h3>Direito Empresarial</h3>
+              <div class="advogado-info">
+                <div class="advogado-nome">Dr. Fernando Costa Neto</div>
+                <div class="oab-numero">OAB/SP 567.890</div>
+                <div class="descricao">
+                  Constituição de empresas, contratos comerciais, recuperação
+                  judicial e consultoria empresarial. Soluções jurídicas para o
+                  crescimento do seu negócio.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="especialidade-card"
+              onclick="abrirFormulario('direito-imobiliario')"
+            >
+              <div class="advogado-foto">DI</div>
+              <h3>Direito Imobiliário</h3>
+              <div class="advogado-info">
+                <div class="advogado-nome">Dra. Juliana Mendes Souza</div>
+                <div class="oab-numero">OAB/SP 678.901</div>
+                <div class="descricao">
+                  Compra e venda de imóveis, regularização fundiária, locação e
+                  incorporação imobiliária. Segurança jurídica em seus
+                  investimentos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Seções adicionais -->
+      <section id="sobre" class="sobre-section">
+        <div class="container">
+          <h2>Sobre Nós</h2>
+          <div class="sobre-content">
+            <p>
+              A Nelly Advocacia é um escritório de advocacia com tradição e
+              excelência no mercado jurídico. Nossa equipe multidisciplinar
+              oferece soluções jurídicas completas e personalizadas para pessoas
+              físicas e jurídicas.
+            </p>
+            <p>
+              Com mais de uma década de atuação, construímos nossa reputação
+              baseada na ética, competência técnica e dedicação aos nossos
+              clientes. Nossos advogados são especialistas em suas respectivas
+              áreas, garantindo o melhor atendimento e resultados eficazes.
+            </p>
+            <div class="valores">
+              <div class="valor-item">
+                <h4>Missão</h4>
+                <p>
+                  Defender os direitos de nossos clientes com excelência técnica
+                  e ética profissional.
+                </p>
+              </div>
+
+              <div class="valor-item">
+                <h4>Valores</h4>
+                <p>
+                  Ética, transparência, comprometimento e excelência em todos os
+                  nossos serviços.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contato-section">
+        <div class="container">
+          <h2>Entre em Contato</h2>
+          <div class="contato-content">
+            <div class="contato-info">
+              <div class="contato-item">
+                <h4>📍 Endereço</h4>
+                <p>
+                  Rua das Palmeiras, 123 - Centro<br />Porto Feliz, SP - CEP:
+                  18540-000
+                </p>
+              </div>
+              <div class="contato-item">
+                <h4>📞 Telefone</h4>
+                <p>(15) 3261-1234<br />(15) 99999-9999</p>
+              </div>
+              <div class="contato-item">
+                <h4>✉️ Email</h4>
+                <p>
+                  contato@nellyadvocacia.com.br<br />atendimento@nellyadvocacia.com.br
+                </p>
+              </div>
+              <div class="contato-item">
+                <h4>🕒 Horário de Atendimento</h4>
+                <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h</p>
+              </div>
+            </div>
+            <div class="contato-form">
+              <h3>Envie sua Mensagem</h3>
+              <form onsubmit="enviarContato(event)">
+                <div class="form-group">
+                  <label for="nome-contato">Nome:</label>
+                  <input type="text" id="nome-contato" name="nome" required />
+                </div>
+                <div class="form-group">
+                  <label for="email-contato">Email:</label>
+                  <input
+                    type="email"
+                    id="email-contato"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="assunto-contato">Assunto:</label>
+                  <input
+                    type="text"
+                    id="assunto-contato"
+                    name="assunto"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensagem-contato">Mensagem:</label>
+                  <textarea
+                    id="mensagem-contato"
+                    name="mensagem"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Páginas de Formulário -->
+      <div id="direito-civil" class="form-page">
+        <div class="form-container">
+          <button class="btn btn-voltar" onclick="voltarHome()">
+            ← Voltar
+          </button>
+          <h2>Direito Civil - Consulta Jurídica</h2>
+          <form onsubmit="enviarFormulario(event, 'Direito Civil')">
+            <div class="form-group">
+              <label for="nome-civil">Nome Completo:</label>
+              <input type="text" id="nome-civil" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email-civil">Email:</label>
+              <input type="email" id="email-civil" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone-civil">Telefone:</label>
+              <input type="tel" id="telefone-civil" name="telefone" required />
+            </div>
+            <div class="form-group">
+              <label for="tipo-caso-civil">Tipo de Caso:</label>
+              <select id="tipo-caso-civil" name="tipo-caso" required>
+                <option value="">Selecione...</option>
+                <option value="contratos">Contratos</option>
+                <option value="responsabilidade-civil">
+                  Responsabilidade Civil
+                </option>
+                <option value="direitos-reais">Direitos Reais</option>
+                <option value="indenizacao">Indenização</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="descricao-civil">Descreva seu caso:</label>
+              <textarea
+                id="descricao-civil"
+                name="descricao"
+                placeholder="Detalhe sua situação jurídica..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Solicitar Consulta</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="direito-trabalhista" class="form-page">
+        <div class="form-container">
+          <button class="btn btn-voltar" onclick="voltarHome()">
+            ← Voltar
+          </button>
+          <h2>Direito Trabalhista - Consulta Jurídica</h2>
+          <form onsubmit="enviarFormulario(event, 'Direito Trabalhista')">
+            <div class="form-group">
+              <label for="nome-trabalhista">Nome Completo:</label>
+              <input type="text" id="nome-trabalhista" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email-trabalhista">Email:</label>
+              <input
+                type="email"
+                id="email-trabalhista"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefone-trabalhista">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone-trabalhista"
+                name="telefone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tipo-caso-trabalhista">Tipo de Caso:</label>
+              <select id="tipo-caso-trabalhista" name="tipo-caso" required>
+                <option value="">Selecione...</option>
+                <option value="demissao">Demissão</option>
+                <option value="horas-extras">Horas Extras</option>
+                <option value="assedio">Assédio Moral/Sexual</option>
+                <option value="acidente-trabalho">Acidente de Trabalho</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="descricao-trabalhista">Descreva seu caso:</label>
+              <textarea
+                id="descricao-trabalhista"
+                name="descricao"
+                placeholder="Detalhe sua situação trabalhista..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Solicitar Consulta</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="direito-penal" class="form-page">
+        <div class="form-container">
+          <button class="btn btn-voltar" onclick="voltarHome()">
+            ← Voltar
+          </button>
+          <h2>Direito Penal - Consulta Jurídica</h2>
+          <form onsubmit="enviarFormulario(event, 'Direito Penal')">
+            <div class="form-group">
+              <label for="nome-penal">Nome Completo:</label>
+              <input type="text" id="nome-penal" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email-penal">Email:</label>
+              <input type="email" id="email-penal" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone-penal">Telefone:</label>
+              <input type="tel" id="telefone-penal" name="telefone" required />
+            </div>
+            <div class="form-group">
+              <label for="urgencia-penal">Nível de Urgência:</label>
+              <select id="urgencia-penal" name="urgencia" required>
+                <option value="">Selecione...</option>
+                <option value="alta">Alta - Situação crítica</option>
+                <option value="media">Média - Precisa de orientação</option>
+                <option value="baixa">Baixa - Consulta preventiva</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="descricao-penal">Descreva seu caso:</label>
+              <textarea
+                id="descricao-penal"
+                name="descricao"
+                placeholder="Detalhe sua situação (mantenha confidencialidade)..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">
+              Solicitar Consulta Urgente
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="direito-familia" class="form-page">
+        <div class="form-container">
+          <button class="btn btn-voltar" onclick="voltarHome()">
+            ← Voltar
+          </button>
+          <h2>Direito de Família - Consulta Jurídica</h2>
+          <form onsubmit="enviarFormulario(event, 'Direito de Família')">
+            <div class="form-group">
+              <label for="nome-familia">Nome Completo:</label>
+              <input type="text" id="nome-familia" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email-familia">Email:</label>
+              <input type="email" id="email-familia" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone-familia">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone-familia"
+                name="telefone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tipo-caso-familia">Tipo de Caso:</label>
+              <select id="tipo-caso-familia" name="tipo-caso" required>
+                <option value="">Selecione...</option>
+                <option value="divorcio">Divórcio</option>
+                <option value="guarda">Guarda de Menores</option>
+                <option value="pensao">Pensão Alimentícia</option>
+                <option value="uniao-estavel">União Estável</option>
+                <option value="adocao">Adoção</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="descricao-familia">Descreva seu caso:</label>
+              <textarea
+                id="descricao-familia"
+                name="descricao"
+                placeholder="Compartilhe sua situação familiar..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Solicitar Consulta</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="direito-empresarial" class="form-page">
+        <div class="form-container">
+          <button class="btn btn-voltar" onclick="voltarHome()">
+            ← Voltar
+          </button>
+          <h2>Direito Empresarial - Consulta Jurídica</h2>
+          <form onsubmit="enviarFormulario(event, 'Direito Empresarial')">
+            <div class="form-group">
+              <label for="nome-empresarial">Nome Completo:</label>
+              <input type="text" id="nome-empresarial" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa-empresarial">Nome da Empresa:</label>
+              <input
+                type="text"
+                id="empresa-empresarial"
+                name="empresa"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email-empresarial">Email:</label>
+              <input
+                type="email"
+                id="email-empresarial"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefone-empresarial">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone-empresarial"
+                name="telefone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tipo-caso-empresarial">Tipo de Serviço:</label>
+              <select id="tipo-caso-empresarial" name="tipo-caso" required>
+                <option value="">Selecione...</option>
+                <option value="constituicao">Constituição de Empresa</option>
+                <option value="contratos">Contratos Comerciais</option>
+                <option value="recuperacao">Recuperação Judicial</option>
+                <option value="consultoria">Consultoria Empresarial</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="descricao-empresarial"
+                >Descreva sua necessidade:</label
+              >
+              <textarea
+                id="descricao-empresarial"
+                name="descricao"
+                placeholder="Detalhe sua situação empresarial..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Solicitar Consulta</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="direito-imobiliario" class="form-page">
+        <div class="form-container">
+          <button class="btn btn-voltar" onclick="voltarHome()">
+            ← Voltar
+          </button>
+          <h2>Direito Imobiliário - Consulta Jurídica</h2>
+          <form onsubmit="enviarFormulario(event, 'Direito Imobiliário')">
+            <div class="form-group">
+              <label for="nome-imobiliario">Nome Completo:</label>
+              <input type="text" id="nome-imobiliario" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email-imobiliario">Email:</label>
+              <input
+                type="email"
+                id="email-imobiliario"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefone-imobiliario">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone-imobiliario"
+                name="telefone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="tipo-caso-imobiliario">Tipo de Serviço:</label>
+              <select id="tipo-caso-imobiliario" name="tipo-caso" required>
+                <option value="">Selecione...</option>
+                <option value="compra-venda">Compra e Venda</option>
+                <option value="locacao">Locação</option>
+                <option value="regularizacao">Regularização</option>
+                <option value="financiamento">Financiamento</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="descricao-imobiliario">Descreva seu caso:</label>
+              <textarea
+                id="descricao-imobiliario"
+                name="descricao"
+                placeholder="Detalhe sua questão imobiliária..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Solicitar Consulta</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class=".footer-content">
+      <p>© 2025 Danielly Pedrini Desenvolvedora Front-End. <br> 
+        Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts.js"></script>
+</html>
