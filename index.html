@@ -180,35 +180,50 @@
         <div class="container">
           <h2>Entre em Contato</h2>
           <div class="contato-content">
+            <!-- Informações de Contato -->
             <div class="contato-info">
-              <div class="contato-item">
-                <h4>📍 Endereço</h4>
-                <p>
-                  Rua das Palmeiras, 123 - Centro<br />Porto Feliz, SP - CEP:
-                  18540-000
-                </p>
+              <!-- Coluna Esquerda -->
+              <div class="contato-coluna">
+                <div class="contato-item">
+                  <h4>📍 Endereço</h4>
+                  <p>
+                    Rua das Palmeiras, 123 - Centro<br />Porto Feliz, SP - CEP:
+                    18540-000
+                  </p>
+                </div>
+                <div class="contato-item">
+                  <h4>📞 Telefone</h4>
+                  <p>(15) 3261-1234<br />(15) 99999-9999</p>
+                </div>
               </div>
-              <div class="contato-item">
-                <h4>📞 Telefone</h4>
-                <p>(15) 3261-1234<br />(15) 99999-9999</p>
-              </div>
-              <div class="contato-item">
-                <h4>✉️ Email</h4>
-                <p>
-                  contato@nellyadvocacia.com.br<br />atendimento@nellyadvocacia.com.br
-                </p>
-              </div>
-              <div class="contato-item">
-                <h4>🕒 Horário de Atendimento</h4>
-                <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h</p>
+
+              <!-- Coluna Direita -->
+              <div class="contato-coluna">
+                <div class="contato-item">
+                  <h4>✉️ Email</h4>
+                  <p>
+                    contato@nellyadvocacia.com.br<br />atendimento@nellyadvocacia.com.br
+                  </p>
+                </div>
+                <div class="contato-item">
+                  <h4>🕒 Horário de Atendimento</h4>
+                  <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h</p>
+                </div>
               </div>
             </div>
+
+            <!-- Formulário de Contato -->
             <div class="contato-form">
               <h3>Envie sua Mensagem</h3>
               <form onsubmit="enviarContato(event)">
                 <div class="form-group">
                   <label for="nome-contato">Nome:</label>
                   <input type="text" id="nome-contato" name="nome" required />
+                </div>
+                <div class="form-group">
+                  <label for="telefone-contato">Telefone:</label>
+                  <input type="tel" id="telefone-contato" name="telefone" />
+                  <span class="error-message">Formato: (11) 99999-9999</span>
                 </div>
                 <div class="form-group">
                   <label for="email-contato">Email:</label>
@@ -221,12 +236,26 @@
                 </div>
                 <div class="form-group">
                   <label for="assunto-contato">Assunto:</label>
-                  <input
-                    type="text"
-                    id="assunto-contato"
-                    name="assunto"
-                    required
-                  />
+                  <select id="assunto-contato" name="assunto" required>
+                    <option value="">Selecione o assunto...</option>
+                    <option value="Direito Civil">Direito Civil</option>
+                    <option value="Direito Trabalhista">
+                      Direito Trabalhista
+                    </option>
+                    <option value="Direito Penal">Direito Penal</option>
+                    <option value="Direito de Família">
+                      Direito de Família
+                    </option>
+                    <option value="Direito Empresarial">
+                      Direito Empresarial
+                    </option>
+                    <option value="Direito Imobiliário">
+                      Direito Imobiliário
+                    </option>
+                  </select>
+                  <span class="error-message"
+                    >Por favor, selecione um assunto.</span
+                  >
                 </div>
                 <div class="form-group">
                   <label for="mensagem-contato">Mensagem:</label>
@@ -242,325 +271,13 @@
           </div>
         </div>
       </section>
-
-      <!-- Páginas de Formulário -->
-      <div id="direito-civil" class="form-page">
-        <div class="form-container">
-          <button class="btn btn-voltar" onclick="voltarHome()">
-            ← Voltar
-          </button>
-          <h2>Direito Civil - Consulta Jurídica</h2>
-          <form onsubmit="enviarFormulario(event, 'Direito Civil')">
-            <div class="form-group">
-              <label for="nome-civil">Nome Completo:</label>
-              <input type="text" id="nome-civil" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="email-civil">Email:</label>
-              <input type="email" id="email-civil" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="telefone-civil">Telefone:</label>
-              <input type="tel" id="telefone-civil" name="telefone" required />
-            </div>
-            <div class="form-group">
-              <label for="tipo-caso-civil">Tipo de Caso:</label>
-              <select id="tipo-caso-civil" name="tipo-caso" required>
-                <option value="">Selecione...</option>
-                <option value="contratos">Contratos</option>
-                <option value="responsabilidade-civil">
-                  Responsabilidade Civil
-                </option>
-                <option value="direitos-reais">Direitos Reais</option>
-                <option value="indenizacao">Indenização</option>
-                <option value="outros">Outros</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="descricao-civil">Descreva seu caso:</label>
-              <textarea
-                id="descricao-civil"
-                name="descricao"
-                placeholder="Detalhe sua situação jurídica..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Solicitar Consulta</button>
-          </form>
-        </div>
-      </div>
-
-      <div id="direito-trabalhista" class="form-page">
-        <div class="form-container">
-          <button class="btn btn-voltar" onclick="voltarHome()">
-            ← Voltar
-          </button>
-          <h2>Direito Trabalhista - Consulta Jurídica</h2>
-          <form onsubmit="enviarFormulario(event, 'Direito Trabalhista')">
-            <div class="form-group">
-              <label for="nome-trabalhista">Nome Completo:</label>
-              <input type="text" id="nome-trabalhista" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="email-trabalhista">Email:</label>
-              <input
-                type="email"
-                id="email-trabalhista"
-                name="email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="telefone-trabalhista">Telefone:</label>
-              <input
-                type="tel"
-                id="telefone-trabalhista"
-                name="telefone"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="tipo-caso-trabalhista">Tipo de Caso:</label>
-              <select id="tipo-caso-trabalhista" name="tipo-caso" required>
-                <option value="">Selecione...</option>
-                <option value="demissao">Demissão</option>
-                <option value="horas-extras">Horas Extras</option>
-                <option value="assedio">Assédio Moral/Sexual</option>
-                <option value="acidente-trabalho">Acidente de Trabalho</option>
-                <option value="outros">Outros</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="descricao-trabalhista">Descreva seu caso:</label>
-              <textarea
-                id="descricao-trabalhista"
-                name="descricao"
-                placeholder="Detalhe sua situação trabalhista..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Solicitar Consulta</button>
-          </form>
-        </div>
-      </div>
-
-      <div id="direito-penal" class="form-page">
-        <div class="form-container">
-          <button class="btn btn-voltar" onclick="voltarHome()">
-            ← Voltar
-          </button>
-          <h2>Direito Penal - Consulta Jurídica</h2>
-          <form onsubmit="enviarFormulario(event, 'Direito Penal')">
-            <div class="form-group">
-              <label for="nome-penal">Nome Completo:</label>
-              <input type="text" id="nome-penal" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="email-penal">Email:</label>
-              <input type="email" id="email-penal" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="telefone-penal">Telefone:</label>
-              <input type="tel" id="telefone-penal" name="telefone" required />
-            </div>
-            <div class="form-group">
-              <label for="urgencia-penal">Nível de Urgência:</label>
-              <select id="urgencia-penal" name="urgencia" required>
-                <option value="">Selecione...</option>
-                <option value="alta">Alta - Situação crítica</option>
-                <option value="media">Média - Precisa de orientação</option>
-                <option value="baixa">Baixa - Consulta preventiva</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="descricao-penal">Descreva seu caso:</label>
-              <textarea
-                id="descricao-penal"
-                name="descricao"
-                placeholder="Detalhe sua situação (mantenha confidencialidade)..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">
-              Solicitar Consulta Urgente
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div id="direito-familia" class="form-page">
-        <div class="form-container">
-          <button class="btn btn-voltar" onclick="voltarHome()">
-            ← Voltar
-          </button>
-          <h2>Direito de Família - Consulta Jurídica</h2>
-          <form onsubmit="enviarFormulario(event, 'Direito de Família')">
-            <div class="form-group">
-              <label for="nome-familia">Nome Completo:</label>
-              <input type="text" id="nome-familia" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="email-familia">Email:</label>
-              <input type="email" id="email-familia" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="telefone-familia">Telefone:</label>
-              <input
-                type="tel"
-                id="telefone-familia"
-                name="telefone"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="tipo-caso-familia">Tipo de Caso:</label>
-              <select id="tipo-caso-familia" name="tipo-caso" required>
-                <option value="">Selecione...</option>
-                <option value="divorcio">Divórcio</option>
-                <option value="guarda">Guarda de Menores</option>
-                <option value="pensao">Pensão Alimentícia</option>
-                <option value="uniao-estavel">União Estável</option>
-                <option value="adocao">Adoção</option>
-                <option value="outros">Outros</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="descricao-familia">Descreva seu caso:</label>
-              <textarea
-                id="descricao-familia"
-                name="descricao"
-                placeholder="Compartilhe sua situação familiar..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Solicitar Consulta</button>
-          </form>
-        </div>
-      </div>
-
-      <div id="direito-empresarial" class="form-page">
-        <div class="form-container">
-          <button class="btn btn-voltar" onclick="voltarHome()">
-            ← Voltar
-          </button>
-          <h2>Direito Empresarial - Consulta Jurídica</h2>
-          <form onsubmit="enviarFormulario(event, 'Direito Empresarial')">
-            <div class="form-group">
-              <label for="nome-empresarial">Nome Completo:</label>
-              <input type="text" id="nome-empresarial" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="empresa-empresarial">Nome da Empresa:</label>
-              <input
-                type="text"
-                id="empresa-empresarial"
-                name="empresa"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email-empresarial">Email:</label>
-              <input
-                type="email"
-                id="email-empresarial"
-                name="email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="telefone-empresarial">Telefone:</label>
-              <input
-                type="tel"
-                id="telefone-empresarial"
-                name="telefone"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="tipo-caso-empresarial">Tipo de Serviço:</label>
-              <select id="tipo-caso-empresarial" name="tipo-caso" required>
-                <option value="">Selecione...</option>
-                <option value="constituicao">Constituição de Empresa</option>
-                <option value="contratos">Contratos Comerciais</option>
-                <option value="recuperacao">Recuperação Judicial</option>
-                <option value="consultoria">Consultoria Empresarial</option>
-                <option value="outros">Outros</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="descricao-empresarial"
-                >Descreva sua necessidade:</label
-              >
-              <textarea
-                id="descricao-empresarial"
-                name="descricao"
-                placeholder="Detalhe sua situação empresarial..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Solicitar Consulta</button>
-          </form>
-        </div>
-      </div>
-
-      <div id="direito-imobiliario" class="form-page">
-        <div class="form-container">
-          <button class="btn btn-voltar" onclick="voltarHome()">
-            ← Voltar
-          </button>
-          <h2>Direito Imobiliário - Consulta Jurídica</h2>
-          <form onsubmit="enviarFormulario(event, 'Direito Imobiliário')">
-            <div class="form-group">
-              <label for="nome-imobiliario">Nome Completo:</label>
-              <input type="text" id="nome-imobiliario" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="email-imobiliario">Email:</label>
-              <input
-                type="email"
-                id="email-imobiliario"
-                name="email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="telefone-imobiliario">Telefone:</label>
-              <input
-                type="tel"
-                id="telefone-imobiliario"
-                name="telefone"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="tipo-caso-imobiliario">Tipo de Serviço:</label>
-              <select id="tipo-caso-imobiliario" name="tipo-caso" required>
-                <option value="">Selecione...</option>
-                <option value="compra-venda">Compra e Venda</option>
-                <option value="locacao">Locação</option>
-                <option value="regularizacao">Regularização</option>
-                <option value="financiamento">Financiamento</option>
-                <option value="outros">Outros</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="descricao-imobiliario">Descreva seu caso:</label>
-              <textarea
-                id="descricao-imobiliario"
-                name="descricao"
-                placeholder="Detalhe sua questão imobiliária..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Solicitar Consulta</button>
-          </form>
-        </div>
-      </div>
     </main>
     <footer>
-        <div class=".footer-content">
-      <p>© 2025 Danielly Pedrini Desenvolvedora Front-End. <br> 
-        Todos os direitos reservados.</p>
+      <div class="footer-content">
+        <p>
+          © 2025 Danielly Pedrini Desenvolvedora Front-End. <br />
+          Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   </body>
