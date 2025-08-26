@@ -3,7 +3,7 @@
 
 O **Nelly Advocacia** é um site institucional que apresenta os serviços jurídicos oferecidos pelo escritório. Desenvolvido com uma identidade visual elegante em **preto e dourado**, transmitindo **confiança** e **profissionalismo**.
 
-
+  <img src="./src/img projeto advocacia.jpeg" alt="imagem do projeto">
 
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
