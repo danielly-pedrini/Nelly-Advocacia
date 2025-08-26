@@ -26,7 +26,7 @@ function mostrarNotificacao(
   titulo,
   mensagem,
   tipo = 'success',
-  duracao = 4000
+  duracao = 2000
 ) {
   const container = document.getElementById('notification-container');
   if (!container) return;
@@ -346,7 +346,7 @@ function abrirFormulario(especialidadeId) {
         `${especialidade}`,
         `Preencha o formulário abaixo para consulta sobre ${especialidade.toLowerCase()}.`,
         'success',
-        6000
+        3000
       );
 
       // Pré-selecionar o assunto sempre
